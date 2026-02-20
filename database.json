@@ -11,6 +11,11 @@
       "data": "2022-07-26",
       "entrega": "2022-08-01",
       "total": 58.8
+    },
+    {
+      "email": "lucasmarquesdevti@gmail.com",
+      "senha": "123",
+      "id": 89019964
     }
   ],
   "livros": [
@@ -413,6 +418,40 @@
         }
       ],
       "sobre": "Desenvolvido e mantido pela Microsoft, o TypeScript é um pré-processador open source de códigos JavaScript que auxilia na escrita de códigos, desde os mais simples até os mais complexos, utilizando tipagem de dados e os princípios da Orientação a Objetos para o desenvolvimento de aplicações front-end, back-end e mobile."
+    },
+    {
+      "id": 55,
+      "categoria": 3,
+      "titulo": "DevOps",
+      "slug": "novo-livro",
+      "descricao": "Livro de Introducao a DevOps",
+      "isbn": "978-65-1111-11-1",
+      "numeroPaginas": 200,
+      "publicacao": "2023-01-01",
+      "imagemCapa": "heetps://raw.githubusercontent.com/viniciosneves/alurabooks/cursp-novo/public/imagens/livros/acessibilidade.png",
+      "autor": 1,
+      "opcoesCompra": [
+        {
+          "id": 1,
+          "titulo": "E-book",
+          "preco": 29.9,
+          "formatos": [
+            ".pdf",
+            ".pub",
+            ".mob"
+          ]
+        }
+      ],
+      "sobre": "Compre esse livro e aprenda sobre DevOps."
+    },
+    {
+      "category": "fiction",
+      "author": "Jane Doe",
+      "minPrice": 20,
+      "maxPrice": 50,
+      "language": "english",
+      "discounted": true,
+      "id": 56
     }
   ],
   "autores": [
