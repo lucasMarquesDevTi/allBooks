@@ -1,15 +1,24 @@
-name: Debug
+name: Workflow de Integração Contínua 
 
 on:
   pull_request:
     branches: [ "main" ]
 
 jobs:
-  debug:
+  testes:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Mostrar estrutura completa
-        run: ls -R
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: ./allbooks-aula-01
+        run: npm install
+
+      - name: Run tests
+        working-directory: ./allbooks-aula-01
+        run: npm test
