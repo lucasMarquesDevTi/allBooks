@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Mostrar estrutura do projeto
+        run: ls -R
+      
       - name: Install dependencies
         working-directory: ./allbooks-aula-01
         run: npm install
