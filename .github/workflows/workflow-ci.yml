@@ -17,11 +17,9 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: |
-          cd allbooks-aula-01
-          npm install
+        working-directory: ./allbooks-aula-01
+        run: npm install
 
       - name: Run tests
-        run: |
-          cd allbooks-aula-01
-          npm test
+        working-directory: ./allbooks-aula-01
+        run: npm test
