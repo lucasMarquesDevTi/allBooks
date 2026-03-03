@@ -16,13 +16,12 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Mostrar estrutura do projeto
-        run: ls -R
-      
       - name: Install dependencies
-        working-directory: ./allbooks-aula-01
-        run: npm install
+        run: |
+          cd allbooks-aula-01
+          npm install
 
       - name: Run tests
-        working-directory: ./allbooks-aula-01
-        run: npm test
+        run: |
+          cd allbooks-aula-01
+          npm test
